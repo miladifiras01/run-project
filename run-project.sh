@@ -72,9 +72,9 @@ case "$project_framework" in
 	run_angular_app "$project_root" "$port"
 	;;
 3)
-	read -p "Type app port:(default: 4200) " port
+	read -p "Type app port:(default: 8000) " port
 	if [[ -z "$port" ]]; then
-		port=4200
+		port=8000
 	fi
 	echo "Running fastApi application..."
 	run_fastapi_app "$project_root" "$port"
